@@ -12,10 +12,10 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 # ls /dev/serial/by-path
-                'serial_port': '/dev/USB0',
+                'serial_port': '/dev/ttyUSB0',
                 'frame_id': 'laser_frame',
                 'angle_compensate': True,
-                'scan_mode': 'Standard'
+                'scan_mode': 'Standard',
             }]
         )
     ])
